@@ -282,7 +282,19 @@ UnitTypes.zenith.weapons.get(0).bullet.lifetime = 38;
 
 //antumbra but without payload capacity
 
-UnitTypes.antumbra.health = 5000;
+UnitTypes.antumbra.health = 4450;
+UnitTypes.antumbra.armor = 15;
+UnitTypes.antumbra.speed = (4 / 7.5);
+UnitTypes.antumbra.itemCapacity = 60;
+UnitTypes.antumbra.weapons.get(0).bullet.damage = 20;
+UnitTypes.antumbra.weapons.get(0).bullet.lifetime = (25 * 8) / 5;
+UnitTypes.antumbra.weapons.get(1).bullet.damage = 20;
+UnitTypes.antumbra.weapons.get(1).bullet.lifetime = (25 * 8) / 5;
+UnitTypes.antumbra.weapons.get(2).bullet.collidesAir = false;
+UnitTypes.antumbra.weapons.get(2).bullet.damage = 220;
+UnitTypes.antumbra.weapons.get(2).reload = 24;
+UnitTypes.antumbra.weapons.get(2).bullet.lifetime = (28 * 8) / 8;
+UnitTypes.antumbra.range = (28 * 8);
 
 //eclipse changes
 
