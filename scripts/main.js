@@ -427,26 +427,29 @@ Blocks.salvo.requirements = ItemStack.with(Items.copper, 450, Items.graphite, 36
 //again less health is its easier to destroy using something like horizons or just flares
 
 Blocks.ripple.health = 810;
-Blocks.ripple.ammoTypes.get(Items.graphite).splashDamage = 90;
-Blocks.ripple.ammoTypes.get(Items.graphite).splashDamageRadius = 12;
-Blocks.ripple.ammoTypes.get(Items.graphite).ammoMultiplier = 1;
+Blocks.ripple.ammoTypes.get(Items.graphite).splashDamage = 120;
+Blocks.ripple.ammoTypes.get(Items.graphite).splashDamageRadius = 16;
+Blocks.ripple.ammoTypes.get(Items.graphite).ammoMultiplier = 2;
+Blocks.ripple.ammoTypes.get(Items.graphite).knockback = 3;
 Blocks.ripple.ammoTypes.get(Items.silicon).splashDamage = 30;
-Blocks.ripple.ammoTypes.get(Items.silicon).reloadMultiplier = 1.5;
-Blocks.ripple.ammoTypes.get(Items.silicon).splashDamageRadius = 16;
-Blocks.ripple.ammoTypes.get(Items.silicon).ammoMultiplier = 6;
+Blocks.ripple.ammoTypes.get(Items.silicon).reloadMultiplier = 2.5;
+Blocks.ripple.ammoTypes.get(Items.silicon).splashDamageRadius = 14;
+Blocks.ripple.ammoTypes.get(Items.silicon).ammoMultiplier = 3;
 Blocks.ripple.ammoTypes.get(Items.plastanium).splashDamage = 50;
-Blocks.ripple.ammoTypes.get(Items.plastanium).splashDamageRadius = 48;
+Blocks.ripple.ammoTypes.get(Items.plastanium).splashDamageRadius = 24;
 Blocks.ripple.ammoTypes.get(Items.plastanium).fragBullet.width = 5;
 Blocks.ripple.ammoTypes.get(Items.plastanium).fragBullet.lifetime = 30;
-Blocks.ripple.ammoTypes.get(Items.plastanium).fragBullet.damage = 60;
-Blocks.ripple.ammoTypes.get(Items.plastanium).fragBullets = 4;
-Blocks.ripple.ammoTypes.get(Items.plastanium).ammoMultiplier = 3;
-Blocks.ripple.ammoTypes.get(Items.pyratite).splashDamage = 60;
-Blocks.ripple.ammoTypes.get(Items.pyratite).splashDamageRadius = 40;
-Blocks.ripple.ammoTypes.get(Items.pyratite).ammoMultiplier = 3;
-Blocks.ripple.ammoTypes.get(Items.blastCompound).splashDamage = 75;
-Blocks.ripple.ammoTypes.get(Items.blastCompound).splashDamageRadius = 64;
-Blocks.ripple.ammoTypes.get(Items.blastCompound).ammoMultiplier = 6;
+Blocks.ripple.ammoTypes.get(Items.plastanium).fragBullet.damage = 50;
+Blocks.ripple.ammoTypes.get(Items.plastanium).fragBullets = 2;
+Blocks.ripple.ammoTypes.get(Items.plastanium).ammoMultiplier = 2;
+Blocks.ripple.ammoTypes.get(Items.plastanium).knockback = 4;
+Blocks.ripple.ammoTypes.get(Items.pyratite).splashDamage = 33;
+Blocks.ripple.ammoTypes.get(Items.pyratite).splashDamageRadius = 28;
+Blocks.ripple.ammoTypes.get(Items.pyratite).ammoMultiplier = 2;
+Blocks.ripple.ammoTypes.get(Items.blastCompound).splashDamage = 45;
+Blocks.ripple.ammoTypes.get(Items.blastCompound).splashDamageRadius = 36;
+Blocks.ripple.ammoTypes.get(Items.blastCompound).ammoMultiplier = 1;
+Blocks.ripple.ammoTypes.get(Items.blastCompound).knockback = 0;
 Blocks.ripple.shoot.shots = 20;
 Blocks.ripple.reload = 240;
 Blocks.ripple.ammoPerShot = 6;
@@ -482,7 +485,7 @@ Blocks.swarmer.ammoTypes.get(Items.surgeAlloy).speed = 7.4;
 Blocks.swarmer.ammoTypes.get(Items.surgeAlloy).rangeChange = -80;
 Blocks.swarmer.range = 400;
 Blocks.swarmer.limitRange();
-Blocks.swarmer.requirements = ItemStack.with(Items.graphite, 210, Items.titanium, 210, Items.silicon, 180, Items.plastanium, 270);
+Blocks.ripple.requirements = ItemStack.with(Items.copper, 900, Items.graphite, 850, Items.titanium, 750);
 
 //cyclone
 
