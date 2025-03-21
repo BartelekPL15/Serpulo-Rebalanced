@@ -288,6 +288,41 @@ UnitTypes.antumbra.health = 5000;
 
 UnitTypes.eclipse.health = 65000;
 
+//mono
+
+let monoHeal = new RegenAbility();
+monoHeal.percentAmount = 1 / (300 * 60) * 100;
+
+UnitTypes.mono.abilities.add(monoHeal);
+UnitTypes.mono.health = 220;
+UnitTypes.mono.armor = 2;
+
+//poly
+
+UnitTypes.poly.health = 320;
+
+//mega
+
+UnitTypes.mega.health = 600;
+UnitTypes.mega.armor = 10;
+
+//quad
+
+UnitTypes.quad.health = 850;
+UnitTypes.quad.armor = 10;
+UnitTypes.quad.weapons.get(0).bullet.splashDamage = 1250;
+UnitTypes.quad.weapons.get(0).bullet.splashDamageRadius = 64;
+UnitTypes.quad.weapons.get(0).reload = 300;
+UnitTypes.quad.itemCapacity = 0;//to avoid loading up quad with blast compound or something else
+UnitTypes.quad.speed = (20 / 7.5);
+
+//oct
+
+UnitTypes.oct.health = 12000;
+UnitTypes.oct.armor = 45;//screw scatters in particular
+UnitTypes.oct.abilities.get(0).max = 40000;
+UnitTypes.oct.abilities.get(0).regen = (500 / 60);
+
 //BLOCKS
 
 //conveyors
