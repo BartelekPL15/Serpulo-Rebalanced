@@ -134,7 +134,7 @@ UnitTypes.nova.weapons.get(0).bullet.lifetime = (27 * 8) / 5;
 
 UnitTypes.pulsar.health = 300;
 UnitTypes.pulsar.armor = 0;
-UnitTypes.pulsar.range = (15 * 8);
+UnitTypes.pulsar.range = (12 * 8);
 UnitTypes.pulsar.weapons.get(0).bullet.damage = 40;//40 damage so it can 1 shoot conveyors
 UnitTypes.pulsar.weapons.get(0).bullet.lightningLength = 17;
 UnitTypes.pulsar.weapons.get(0).bullet.lightningLengthRand = 2;
@@ -144,8 +144,13 @@ UnitTypes.pulsar.weapons.get(0).inaccuracy = 6;
 //provides the team with shield, terible at fights, but great at defensive holds
 
 UnitTypes.quasar.weapons.get(0).bullet.collidesAir = false;
+UnitTypes.quasar.range = (12 * 8);//-4 range for faster reload so it can counter crawlers better
 UnitTypes.quasar.targetAir = false;
-UnitTypes.quasar.abilities.get(0).radius = 80; 
+UnitTypes.quasar.weapons.get(0).reload = 30;
+UnitTypes.quasar.weapons.get(0).bullet.length = (12.5 * 8);
+UnitTypes.quasar.abilities.get(0).radius = 80;
+UnitTypes.quasar.abilities.get(0).max = 300;
+UnitTypes.quasar.abilities.get(0).regen = (36 / 60); 
 
 //vela changes
 //honestly its good as it is
