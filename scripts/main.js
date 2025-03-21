@@ -298,7 +298,25 @@ UnitTypes.antumbra.range = (28 * 8);
 
 //eclipse changes
 
-UnitTypes.eclipse.health = 65000;
+UnitTypes.eclipse.health = 45000;
+UnitTypes.eclipse.armor = 17;
+UnitTypes.eclipse.speed = (3.25 / 7.5);
+UnitTypes.eclipse.weapons.get(0).bullet.damage = 95;
+UnitTypes.eclipse.weapons.get(0).reload = 15;
+UnitTypes.eclipse.weapons.get(1).bullet.collidesGround = false;
+UnitTypes.eclipse.weapons.get(1).bullet.damage = 140;
+UnitTypes.eclipse.weapons.get(1).bullet.splashDamage = 95;
+UnitTypes.eclipse.weapons.get(1).bullet.splashDamageRadius = 12;
+UnitTypes.eclipse.weapons.get(1).reload = 30;
+UnitTypes.eclipse.weapons.get(1).bullet.lifetime = (30 * 8) / 5;
+UnitTypes.eclipse.weapons.get(2).bullet.collidesGround = false;
+UnitTypes.eclipse.weapons.get(2).bullet.damage = 10;
+UnitTypes.eclipse.weapons.get(2).bullet.splashDamage = 65;
+UnitTypes.eclipse.weapons.get(2).bullet.splashDamageRadius = 28;
+UnitTypes.eclipse.weapons.get(2).reload = 8;
+UnitTypes.eclipse.weapons.get(2).bullet.lifetime = (30 * 8) / 5;
+UnitTypes.eclipse.weapons.get(2).inaccuracy = 5;
+UnitTypes.eclipse.range = (30 * 8);
 
 //mono
 
