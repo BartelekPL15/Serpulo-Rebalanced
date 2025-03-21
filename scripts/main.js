@@ -171,11 +171,11 @@ UnitTypes.corvus.range = (65 * 8);//no, its not gonna be 69 range, you want make
 //crawler tree is not good against buildins but very effective wining unit fights (ground of course)
 //crawler changes
 
-UnitTypes.crawler.health = 280;
-UnitTypes.crawler.armor = 8;
+UnitTypes.crawler.health = 220;
+UnitTypes.crawler.armor = 3;
 UnitTypes.crawler.targetAir = false;
 UnitTypes.crawler.weapons.get(0).bullet.collidesAir = false;
-UnitTypes.crawler.weapons.get(0).bullet.splashDamage = 325;
+UnitTypes.crawler.weapons.get(0).bullet.splashDamage = 280;
 UnitTypes.crawler.weapons.get(0).bullet.splashDamageRadius = 28;
 UnitTypes.crawler.weapons.get(0).bullet.status = StatusEffects.slow;
 UnitTypes.crawler.weapons.get(0).bullet.statusDuration = 300;
