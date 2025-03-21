@@ -182,9 +182,10 @@ UnitTypes.crawler.range = (1);
 
 UnitTypes.atrax.health = 700;
 UnitTypes.atrax.armor = 1;
-UnitTypes.atrax.speed = (7 / 7.5);
+UnitTypes.atrax.speed = (7.25 / 7.5);
 UnitTypes.atrax.weapons.get(0).bullet.buildingDamageMultiplier = 0.34;
-UnitTypes.atrax.weapons.get(0).bullet.damage = 20;
+UnitTypes.atrax.weapons.get(0).bullet.damage = 28;
+UnitTypes.atrax.weapons.get(0).bullet.knockback = 1;
 
 //spiroct changes
 //i can't spell spiroct
