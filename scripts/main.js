@@ -456,7 +456,7 @@ Blocks.ripple.ammoPerShot = 6;
 Blocks.ripple.minRange = 100;
 Blocks.ripple.velocityRnd = -0.2;
 Blocks.ripple.inaccuracy = 10;
-Blocks.ripple.requirements = ItemStack.with(Items.copper, 900, Items.graphite, 810, Items.titanium, 720);
+Blocks.ripple.requirements = ItemStack.with(Items.copper, 900, Items.graphite, 850, Items.titanium, 750);
 
 //swarmer
 //simular to yasr
@@ -485,7 +485,7 @@ Blocks.swarmer.ammoTypes.get(Items.surgeAlloy).speed = 7.4;
 Blocks.swarmer.ammoTypes.get(Items.surgeAlloy).rangeChange = -80;
 Blocks.swarmer.range = 400;
 Blocks.swarmer.limitRange();
-Blocks.ripple.requirements = ItemStack.with(Items.copper, 900, Items.graphite, 850, Items.titanium, 750);
+Blocks.swarmer.requirements = ItemStack.with(Items.graphite, 210, Items.titanium, 210, Items.silicon, 180, Items.plastanium, 270);
 
 //cyclone
 
