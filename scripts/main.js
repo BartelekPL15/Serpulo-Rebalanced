@@ -138,6 +138,8 @@ UnitTypes.pulsar.range = (12 * 8);
 UnitTypes.pulsar.weapons.get(0).bullet.damage = 40;//40 damage so it can 1 shoot conveyors
 UnitTypes.pulsar.weapons.get(0).bullet.lightningLength = 17;
 UnitTypes.pulsar.weapons.get(0).bullet.lightningLengthRand = 2;
+UnitTypes.pulsar.weapons.get(0).shoot.shots = 2;
+UnitTypes.pulsar.weapons.get(0).reload = 60;
 UnitTypes.pulsar.weapons.get(0).inaccuracy = 6;
 
 //quasar changes
@@ -287,6 +289,10 @@ UnitTypes.antumbra.health = 5000;
 UnitTypes.eclipse.health = 65000;
 
 //BLOCKS
+
+//conveyors
+
+Blocks.titaniumConveyor.health = 40;
 
 //walls
 
