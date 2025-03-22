@@ -402,7 +402,7 @@ UnitTypes.risso.rotateSpeed = 8;//more rotate speed so it can dodge better
 UnitTypes.risso.weapons.get(0).bullet.damage = 13;
 UnitTypes.risso.weapons.get(1).shoot.shots = 5;
 UnitTypes.risso.weapons.get(1).shoot.shotDelay = 5;
-UnitTypes.risso.weapons.get(1).reload = (60 * 5 * 2.5)//fires salvo of missles every 2.5seconds
+UnitTypes.risso.weapons.get(1).reload = (60 * 2.5)//fires salvo of missles every 2.5seconds
 UnitTypes.risso.weapons.get(1).bullet.damage = 23;
 UnitTypes.risso.weapons.get(1).bullet.splashDamage = 20;
 UnitTypes.risso.weapons.get(1).bullet.splashDamageRadius = 20;
@@ -433,6 +433,24 @@ UnitTypes.minke.weapons.get(1).bullet.splashDamage = 90;
 UnitTypes.minke.weapons.get(1).reload = 45;
 UnitTypes.minke.weapons.get(1).bullet.knockback = 0;
 UnitTypes.minke.weapons.get(1).bullet.lifetime = (32.5 * 8) / 3;
+
+//neval support will be a defensive type of neval units, most of them having close range
+
+//retusa
+
+UnitTypes.retusa.health = 320;
+UnitTypes.retusa.speed = (7.5 / 7.5);
+UnitTypes.retusa.weapons.get(1).shoot.shots = 7;
+UnitTypes.retusa.weapons.get(1).shoot.shotDelay = 3;
+UnitTypes.retusa.weapons.get(1).reload = (60 * 3);
+UnitTypes.retusa.weapons.get(1).bullet.damage = 40;
+UnitTypes.retusa.weapons.get(1).bullet.splashDamage = 15;
+UnitTypes.retusa.weapons.get(1).bullet.splashDamageRadius = 48;
+UnitTypes.retusa.weapons.get(1).bullet.healPercent = 3;
+UnitTypes.retusa.weapons.get(1).bullet.weaveMag = 3;
+UnitTypes.retusa.weapons.get(1).bullet.weaveScale = 1;
+UnitTypes.retusa.weapons.get(1).bullet.speed = 3.5;
+UnitTypes.retusa.weapons.get(1).bullet.lifetime = (10 * 8) / 3.5;
 
 //BLOCKS
 
