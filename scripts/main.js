@@ -368,7 +368,7 @@ UnitTypes.mono.armor = 2;
 
 UnitTypes.poly.health = 320;
 UnitTypes.poly.armor = 12;
-UnitTypes.poly.speed (22.5 / 7.5);
+UnitTypes.poly.speed = (22.5 / 7.5);
 UnitTypes.poly.itemCapacity = 60;
 UnitTypes.poly.weapons.get(0).bullet.collidesAir = false;
 UnitTypes.poly.weapons.get(0).bullet.healPercent = 7.5;
