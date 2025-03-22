@@ -367,6 +367,13 @@ UnitTypes.mono.armor = 2;
 //poly
 
 UnitTypes.poly.health = 320;
+UnitTypes.poly.armor = 12;
+UnitTypes.poly.speed (22.5 / 7.5);
+UnitTypes.poly.itemCapacity = 60;
+UnitTypes.poly.weapons.get(0).bullet.collidesAir = false;
+UnitTypes.poly.weapons.get(0).bullet.healPercent = 7.5;
+UnitTypes.poly.weapons.get(0).bullet.damage = 9;
+UnitTypes.poly.abilities.get(0).regen = 24;
 
 //mega
 
@@ -451,6 +458,16 @@ UnitTypes.retusa.weapons.get(1).bullet.weaveMag = 3;
 UnitTypes.retusa.weapons.get(1).bullet.weaveScale = 1;
 UnitTypes.retusa.weapons.get(1).bullet.speed = 3.5;
 UnitTypes.retusa.weapons.get(1).bullet.lifetime = (10 * 8) / 3.5;
+
+//oxynoe
+
+UnitTypes.oxynoe.health = 670;
+UnitTypes.oxynoe.armor = 10;
+UnitTypes.oxynoe.speed = (9 / 7.5);
+UnitTypes.oxynoe.weapons.get(0).bullet.damage = 37;
+UnitTypes.oxynoe.weapons.get(1).reload = 6;
+UnitTypes.oxynoe.weapons.get(1).targetInterval = 2;
+UnitTypes.oxynoe.weapons.get(1).targetSwitchInterval = 5;
 
 //BLOCKS
 
