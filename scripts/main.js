@@ -373,7 +373,7 @@ UnitTypes.poly.itemCapacity = 60;
 UnitTypes.poly.weapons.get(0).bullet.collidesAir = false;
 UnitTypes.poly.weapons.get(0).bullet.healPercent = 7.5;
 UnitTypes.poly.weapons.get(0).bullet.damage = 9;
-UnitTypes.poly.abilities.get(0).regen = 24;
+UnitTypes.poly.abilities.get(0).amount = 24;
 
 //mega
 
