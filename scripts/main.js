@@ -197,13 +197,28 @@ UnitTypes.atrax.weapons.get(0).bullet.knockback = 1;
 //spiroct changes
 //i can't spell spiroct
 
+let heal = new RegenAbility();
+heal.amount = (20 / 60);
+
 UnitTypes.spiroct.health = 1500;
 UnitTypes.spiroct.speed = (6 / 7.5);
 UnitTypes.spiroct.targetAir = false;
 UnitTypes.spiroct.weapons.get(0).bullet.collidesAir = false;
 UnitTypes.spiroct.weapons.get(0).bullet.buildingDamageMultiplier = 0.25;
+UnitTypes.spiroct.weapons.get(0).bullet.damage = 75;
+UnitTypes.spiroct.weapons.get(0).reload = 30;
+UnitTypes.spiroct.weapons.get(0).bullet.knockback = 0;
+UnitTypes.spiroct.weapons.get(0).bullet.sapStrength = 1;
+UnitTypes.spiroct.weapons.get(0).bullet.length = (12 * 7.5);
 UnitTypes.spiroct.weapons.get(1).bullet.collidesAir = false;
-UnitTypes.spiroct.weapons.get(1).bullet.buildingDamageMultiplier = 0.25;
+UnitTypes.spiroct.weapons.get(1).bullet.buildingDamageMultiplier = 0.34;
+UnitTypes.spiroct.weapons.get(1).bullet.knockback = -1.25;
+UnitTypes.spiroct.weapons.get(1).bullet.damage = 12;
+UnitTypes.spiroct.weapons.get(1).reload = 10;
+UnitTypes.spiroct.weapons.get(1).bullet.sapStrength = 1;
+UnitTypes.spiroct.weapons.get(1).bullet.length = (12 * 7.5);
+UnitTypes.spiroct.range = (12 * 8);
+UnitTypes.spiroct.abilities.add(heal);
 
 //arkyid changes
 //bruh, why does arkyid in yasr got so nerfed artylery cannon
