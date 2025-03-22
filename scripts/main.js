@@ -390,6 +390,50 @@ UnitTypes.oct.armor = 45;//screw scatters in particular
 UnitTypes.oct.abilities.get(0).max = 40000;
 UnitTypes.oct.abilities.get(0).regen = (500 / 60);
 
+//neval units are gonna be intresting
+//there's no changes to most neval units in yasr and if there its not very much
+
+//risso
+//(22.03.2025)current idea to rebalance risso: make it fast hit and run unit - better at attacking targets
+UnitTypes.risso.health = 180;//less health to balance out faster speed
+UnitTypes.risso.armor = 5;//so it does't die too fast from splash damage
+UnitTypes.risso.speed = (11.5 / 7.5);
+UnitTypes.risso.rotateSpeed = 8;//more rotate speed so it can dodge better
+UnitTypes.risso.weapons.get(0).bullet.damage = 13;
+UnitTypes.risso.weapons.get(1).shoot.shots = 5;
+UnitTypes.risso.weapons.get(1).shoot.shotDelay = 5;
+UnitTypes.risso.weapons.get(1).reload = (60 * 5 * 2.5)//fires salvo of missles every 2.5seconds
+UnitTypes.risso.weapons.get(1).bullet.damage = 23;
+UnitTypes.risso.weapons.get(1).bullet.splashDamage = 20;
+UnitTypes.risso.weapons.get(1).bullet.splashDamageRadius = 20;
+UnitTypes.risso.weapons.get(1).bullet.collidesAir = false;
+
+//minke
+//(22.03.2025)current idea to rebalance minke: beacouse minke has artillery-mount weapons
+//and AA i'll make it better agains building and air, but worse agains ground
+
+let minkeFrag = new BasicBulletType(3, 15);
+minkeFrag.width = 5;
+minkeFrag.height = 12;
+minkeFrag.shrinkY = 1;
+minkeFrag.lifetime = 20;
+minkeFrag.collidesGround = false;
+
+UnitTypes.minke.health = 300;//less health so it makes easier target
+UnitTypes.minke.armor = 8;//so it does't die too fast from splash damage
+UnitTypes.minke.speed = (4.85 / 7.5);
+UnitTypes.minke.range = (32.5 * 8);//more than hail unless it has silicon ammo
+UnitTypes.minke.rotateSpeed = 2;
+UnitTypes.minke.weapons.get(0).bullet.damage = 15;
+UnitTypes.minke.weapons.get(0).bullet.splashDamage = 40;
+UnitTypes.minke.weapons.get(0).bullet.fragBullets = 3;
+UnitTypes.minke.weapons.get(0).bullet.fragBullet = minkeFrag;
+UnitTypes.minke.weapons.get(1).inaccuracy = 0;
+UnitTypes.minke.weapons.get(1).bullet.splashDamage = 90;
+UnitTypes.minke.weapons.get(1).reload = 45;
+UnitTypes.minke.weapons.get(1).bullet.knockback = 0;
+UnitTypes.minke.weapons.get(1).bullet.lifetime = (32.5 * 8) / 3;
+
 //BLOCKS
 
 //conveyors
