@@ -269,16 +269,53 @@ UnitTypes.horizon.weapons.get(0).velocityRnd = 3.5;
 units from here are not done (this includes all naval, mono tree, zenith, antumbra and eclipse)
 */
 
-//zenith is same as yasr
+//zenith has now 2 extra weapons to help it defend from single units
+
+let zenithFront = new Weapon();
+zenithFront.bullet = new BasicBulletType(3.5, 6);
+zenithFront.shootSound = Sounds.pew;
+zenithFront.mirror = true;
+zenithFront.rotate = false;
+zenithFront.top = false;
+zenithFront.x = 4;
+zenithFront.y = 7;
+zenithFront.shootY = 2;
+zenithFront.reload = 30;
+zenithFront.bullet.width = 8;
+zenithFront.bullet.height = 9;
+zenithFront.bullet.lifetime = (16 * 8) / 3.5;
+zenithFront.bullet.collidesAir = false;
+
+let zenithBack = new Weapon();
+zenithBack.bullet = new BasicBulletType(4.5, 25);
+zenithBack.shootSound = Sounds.pew;
+zenithBack.mirror = true;
+zenithBack.rotate = false;
+zenithBack.top = false;
+zenithBack.x = 5;
+zenithBack.y = -8;
+zenithBack.shootY = 2;
+zenithBack.reload = 120;
+zenithBack.bullet.width = 10;
+zenithBack.bullet.height = 11;
+zenithBack.bullet.lifetime = (22 * 8) / 4.5;
+zenithBack.bullet.collidesAir = false;
+
+//zenith
 
 UnitTypes.zenith.health = 400;
-UnitTypes.zenith.speed = (26 / 7.5);
-UnitTypes.zenith.range = 240;
+UnitTypes.zenith.speed = (15.75 / 7.5);
+UnitTypes.zenith.range = (30 * 8);
 UnitTypes.zenith.weapons.get(0).bullet.collidesGround = false;
 UnitTypes.zenith.weapons.get(0).bullet.keepVelocity = true;
-UnitTypes.zenith.weapons.get(0).bullet.speed = (3 * 2);
+UnitTypes.zenith.weapons.get(0).bullet.speed = 5;
 UnitTypes.zenith.weapons.get(0).bullet.damage = 45;
-UnitTypes.zenith.weapons.get(0).bullet.lifetime = 38;
+UnitTypes.zenith.weapons.get(0).bullet.splashDamage = 25;
+UnitTypes.zenith.weapons.get(0).bullet.splashDamageRadius = 20;
+UnitTypes.zenith.weapons.get(0).bullet.homingPower = 0.2;
+UnitTypes.zenith.weapons.get(0).bullet.lifetime = (30 * 8) / 5;
+UnitTypes.zenith.weapons.add(zenithFront);
+UnitTypes.zenith.weapons.add(zenithBack);
 
 //antumbra but without payload capacity
 
