@@ -357,7 +357,10 @@ UnitTypes.oct.abilities.get(0).regen = (500 / 60);
 
 //conveyors
 
+Blocks.conveyor.health = 40;
 Blocks.titaniumConveyor.health = 40;
+Blocks.armoredConveyor.health = 250;
+Blocks.armoredConveyor.armor = 8;
 
 //walls
 
