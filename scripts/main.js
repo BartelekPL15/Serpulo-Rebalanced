@@ -197,41 +197,75 @@ UnitTypes.atrax.weapons.get(0).bullet.knockback = 1;
 //spiroct changes
 //i can't spell spiroct
 
-let heal = new RegenAbility();
-heal.amount = (20 / 60);
+let spiroctHeal = new RegenAbility();
+spiroctHeal.amount = (20 / 60);
 
-UnitTypes.spiroct.health = 1500;
-UnitTypes.spiroct.speed = (6 / 7.5);
+UnitTypes.spiroct.health = 1750;
+UnitTypes.spiroct.speed = (6.5 / 7.5);
 UnitTypes.spiroct.targetAir = false;
 UnitTypes.spiroct.weapons.get(0).bullet.collidesAir = false;
 UnitTypes.spiroct.weapons.get(0).bullet.buildingDamageMultiplier = 0.25;
-UnitTypes.spiroct.weapons.get(0).bullet.damage = 75;
-UnitTypes.spiroct.weapons.get(0).reload = 30;
+UnitTypes.spiroct.weapons.get(0).bullet.damage = 95;
+UnitTypes.spiroct.weapons.get(0).reload = 20;
 UnitTypes.spiroct.weapons.get(0).bullet.knockback = 0;
-UnitTypes.spiroct.weapons.get(0).bullet.sapStrength = 1;
+UnitTypes.spiroct.weapons.get(0).bullet.sapStrength = 0.5;
 UnitTypes.spiroct.weapons.get(0).bullet.length = (12 * 7.5);
 UnitTypes.spiroct.weapons.get(1).bullet.collidesAir = false;
-UnitTypes.spiroct.weapons.get(1).bullet.buildingDamageMultiplier = 0.34;
+UnitTypes.spiroct.weapons.get(1).bullet.buildingDamageMultiplier = 0.1;
 UnitTypes.spiroct.weapons.get(1).bullet.knockback = -1.25;
-UnitTypes.spiroct.weapons.get(1).bullet.damage = 12;
+UnitTypes.spiroct.weapons.get(1).bullet.damage = 30;
 UnitTypes.spiroct.weapons.get(1).reload = 10;
-UnitTypes.spiroct.weapons.get(1).bullet.sapStrength = 1;
-UnitTypes.spiroct.weapons.get(1).bullet.length = (12 * 7.5);
+UnitTypes.spiroct.weapons.get(1).bullet.sapStrength = 0.75;
+UnitTypes.spiroct.weapons.get(1).bullet.length = (10 * 7.5);
 UnitTypes.spiroct.range = (12 * 8);
-UnitTypes.spiroct.abilities.add(heal);
+UnitTypes.spiroct.abilities.add(spiroctHeal);
 
 //arkyid changes
 //bruh, why does arkyid in yasr got so nerfed artylery cannon
 
+let arkyidHeal = new RegenAbility();
+arkyidHeal.amount = (45 / 60);
+
+let arkyidSapperTwo = new SapBulletType();
+arkyidSapperTwo.sapStrength = 0.5;
+arkyidSapperTwo.length = 80;
+arkyidSapperTwo.damage = 75;
+arkyidSapperTwo.shootEffect = Fx.shootSmall;
+arkyidSapperTwo.hitColor = Color.valueOf("bf92f9");
+arkyidSapperTwo.color = Color.valueOf("bf92f9");
+arkyidSapperTwo.despawnEffect = Fx.none;
+arkyidSapperTwo.width = 0.55;
+arkyidSapperTwo.lifetime = 30;
+arkyidSapperTwo.knockback = -1.5;
+arkyidSapperTwo.buildingDamageMultiplier = 0.25;
+arkyidSapperTwo.collidesAir = false;
+
+let arkyidSapperThree = new SapBulletType();
+arkyidSapperThree.sapStrength = 0.4;
+arkyidSapperThree.length = 96;
+arkyidSapperThree.damage = 125;
+arkyidSapperThree.shootEffect = Fx.shootSmall;
+arkyidSapperThree.hitColor = Color.valueOf("bf92f9");
+arkyidSapperThree.color = Color.valueOf("bf92f9");
+arkyidSapperThree.despawnEffect = Fx.none;
+arkyidSapperThree.width = 0.55;
+arkyidSapperThree.lifetime = 30;
+arkyidSapperThree.knockback = -1.5;
+arkyidSapperThree.buildingDamageMultiplier = 0.25;
+
 UnitTypes.arkyid.health = 6000;
 UnitTypes.arkyid.speed = (5.5 / 7.5);
 UnitTypes.arkyid.weapons.get(0).bullet.collidesAir = false;
+UnitTypes.arkyid.weapons.get(0).reload = 6;
 UnitTypes.arkyid.weapons.get(0).bullet.buildingDamageMultiplier = 0.25;
-UnitTypes.arkyid.weapons.get(1).bullet.buildingDamageMultiplier = 0.25;//yes, this one deals damage to air units. i know
-UnitTypes.arkyid.weapons.get(2).bullet.buildingDamageMultiplier = 0.25;
+UnitTypes.arkyid.weapons.get(1).bullet = arkyidSapperTwo;
+UnitTypes.arkyid.weapons.get(1).reload = 30;
+UnitTypes.arkyid.weapons.get(2).bullet = arkyidSapperThree;
+UnitTypes.arkyid.weapons.get(2).reload = 40;
 UnitTypes.arkyid.weapons.get(3).bullet.splashDamageRadius = 40;
 UnitTypes.arkyid.weapons.get(3).bullet.splashDamage = 55;
 UnitTypes.arkyid.weapons.get(3).bullet.buildingDamageMultiplier = 0.1;
+UnitTypes.arkyid.abilities.add(arkyidHeal);
 
 //toxo changes
 //idk it can be op
