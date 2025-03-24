@@ -125,9 +125,9 @@ novaHeal.shootCone = 30;
 
 UnitTypes.nova.weapons.add(novaHeal);
 UnitTypes.nova.abilities.remove(0);
-UnitTypes.nova.range = (27 * 8);
-UnitTypes.nova.weapons.get(0).bullet.lifetime = (27 * 8) / 5;
-UnitTypes.nova.weapons.get(0).bullet.damage = 28;
+UnitTypes.nova.range = (28 * 8);
+UnitTypes.nova.weapons.get(0).bullet.lifetime = (28 * 8) / 5.2;
+UnitTypes.nova.weapons.get(0).bullet.damage = 52;
 UnitTypes.nova.weapons.get(0).reload = (60 * 4);//2 bullets every 4 seconds
 
 //pulsar changes, finally
@@ -459,12 +459,14 @@ UnitTypes.risso.armor = 5;//so it does't die too fast from splash damage
 UnitTypes.risso.speed = (11.5 / 7.5);
 UnitTypes.risso.rotateSpeed = 8;//more rotate speed so it can dodge better
 UnitTypes.risso.weapons.get(0).bullet.damage = 13;
+UnitTypes.risso.weapons.get(0).bullet.keepVelocity = false;
 UnitTypes.risso.weapons.get(1).shoot.shots = 5;
 UnitTypes.risso.weapons.get(1).shoot.shotDelay = 5;
 UnitTypes.risso.weapons.get(1).reload = (60 * 2.5)//fires salvo of missles every 2.5seconds
 UnitTypes.risso.weapons.get(1).bullet.damage = 23;
 UnitTypes.risso.weapons.get(1).bullet.splashDamage = 20;
 UnitTypes.risso.weapons.get(1).bullet.splashDamageRadius = 20;
+UnitTypes.risso.weapons.get(1).bullet.keepVelocity = false;
 UnitTypes.risso.weapons.get(1).bullet.collidesAir = false;
 
 //minke
