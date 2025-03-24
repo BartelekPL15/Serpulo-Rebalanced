@@ -459,14 +459,16 @@ UnitTypes.risso.armor = 5;//so it does't die too fast from splash damage
 UnitTypes.risso.speed = (11.5 / 7.5);
 UnitTypes.risso.rotateSpeed = 8;//more rotate speed so it can dodge better
 UnitTypes.risso.weapons.get(0).bullet.damage = 13;
-UnitTypes.risso.weapons.get(0).bullet.keepVelocity = false;
+UnitTypes.risso.weapons.get(0).bullet.speed = 5;
+UnitTypes.risso.weapons.get(0).bullet.lifetime = (22.5 * 8) / 5;
 UnitTypes.risso.weapons.get(1).shoot.shots = 5;
 UnitTypes.risso.weapons.get(1).shoot.shotDelay = 5;
 UnitTypes.risso.weapons.get(1).reload = (60 * 2.5)//fires salvo of missles every 2.5seconds
-UnitTypes.risso.weapons.get(1).bullet.damage = 23;
-UnitTypes.risso.weapons.get(1).bullet.splashDamage = 20;
+UnitTypes.risso.weapons.get(1).bullet.damage = 33;
+UnitTypes.risso.weapons.get(1).bullet.splashDamage = 9;
 UnitTypes.risso.weapons.get(1).bullet.splashDamageRadius = 20;
-UnitTypes.risso.weapons.get(1).bullet.keepVelocity = false;
+UnitTypes.risso.weapons.get(1).bullet.speed = 5.8;
+UnitTypes.risso.weapons.get(1).bullet.lifetime = (23 * 8) / 5.8;
 UnitTypes.risso.weapons.get(1).bullet.collidesAir = false;
 
 //minke
