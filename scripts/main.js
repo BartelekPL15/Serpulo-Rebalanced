@@ -43,8 +43,9 @@ UnitTypes.scepter.health = 2000;
 UnitTypes.scepter.speed = (3.22 / 7.5);
 UnitTypes.scepter.range = (38*8);
 UnitTypes.scepter.weapons.get(0).bullet.collidesAir = false;
-UnitTypes.scepter.weapons.get(0).shoot.shots = 2
-UnitTypes.scepter.weapons.get(0).bullet.damage = 100;
+UnitTypes.scepter.weapons.get(0).shoot.shots = 3;
+UnitTypes.scepter.weapons.get(0).reload = (60 * 3);//fires salvo every 3 seconds
+UnitTypes.scepter.weapons.get(0).bullet.damage = 125;
 UnitTypes.scepter.weapons.get(0).bullet.lightningDamage = 5;
 UnitTypes.scepter.weapons.get(0).bullet.lifetime = (38 * 8) / 8;
 UnitTypes.scepter.weapons.get(0).shootCone = 8; //incrased the shoot cone to reduce ai dumbness
@@ -52,13 +53,13 @@ UnitTypes.scepter.weapons.get(1).bullet.collidesGround = false;
 UnitTypes.scepter.weapons.get(1).shootSound = Sounds.shootSnap;
 UnitTypes.scepter.weapons.get(1).bullet.damage = 25;
 UnitTypes.scepter.weapons.get(1).bullet.speed = 5;
-UnitTypes.scepter.weapons.get(1).bullet.lifetime = (38 * 8) / 5;
+UnitTypes.scepter.weapons.get(1).bullet.lifetime = (25 * 8) / 5;
 UnitTypes.scepter.weapons.get(1).bullet.homingPower = 0.1; //a bit higher so it can hit horizons better with the weave
 UnitTypes.scepter.weapons.get(2).bullet.collidesGround = false;
 UnitTypes.scepter.weapons.get(2).shootSound = Sounds.shootSnap;
 UnitTypes.scepter.weapons.get(2).bullet.damage = 25;
 UnitTypes.scepter.weapons.get(2).bullet.speed = 5;
-UnitTypes.scepter.weapons.get(2).bullet.lifetime = (38 * 8) / 5;
+UnitTypes.scepter.weapons.get(2).bullet.lifetime = (25 * 8) / 5;
 UnitTypes.scepter.weapons.get(2).bullet.homingPower = 0.1; //a bit higher so it can hit horizons better with the weave
 
 //reign changes
@@ -82,7 +83,7 @@ reignAAweapon.bullet.weaveScale = 4;
 reignAAweapon.bullet.trailWidth = 3;
 reignAAweapon.bullet.trailLength = 4;
 reignAAweapon.bullet.homingPower = 0.1;
-reignAAweapon.bullet.lifetime = (32 * 8) / 5;
+reignAAweapon.bullet.lifetime = (32 * 8) / 7;
 reignAAweapon.bullet.collidesGround = false;
 
 //just like in YetAnotherSerpuloRebalance t5s are way much more powerfull, it looks like googly didn't spend that much time on this but i will
@@ -94,7 +95,7 @@ UnitTypes.reign.speed = (2.25 / 7.5);
 UnitTypes.reign.weapons.add(reignAAweapon);
 UnitTypes.reign.weapons.get(0).bullet.collidesAir = false;
 UnitTypes.reign.weapons.get(0).bullet.splashDamageRadius = 16;
-UnitTypes.reign.weapons.get(0).bullet.lifetime = (18 * 8) / 8;
+UnitTypes.reign.weapons.get(0).bullet.lifetime = (18 * 8) / 13;
 UnitTypes.reign.weapons.get(0).bullet.damage = 145;
 UnitTypes.reign.range = (18 * 8);
 
@@ -126,6 +127,8 @@ UnitTypes.nova.weapons.add(novaHeal);
 UnitTypes.nova.abilities.remove(0);
 UnitTypes.nova.range = (27 * 8);
 UnitTypes.nova.weapons.get(0).bullet.lifetime = (27 * 8) / 5;
+UnitTypes.nova.weapons.get(0).bullet.damage = 28;
+UnitTypes.nova.weapons.get(0).reload = (60 * 4);//2 bullets every 4 seconds
 
 //pulsar changes, finally
 //googly, i don't care what you say but pulsar needs a buff. i have no clue how in a world can you make already
