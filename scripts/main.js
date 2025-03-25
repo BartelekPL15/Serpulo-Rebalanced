@@ -371,8 +371,8 @@ UnitTypes.zenith.weapons.add(zenithBack);
 
 //antumbra but without payload capacity
 
-UnitTypes.antumbra.health = 4450;
-UnitTypes.antumbra.armor = 15;
+UnitTypes.antumbra.health = 4150;
+UnitTypes.antumbra.armor = 12;
 UnitTypes.antumbra.speed = (4 / 7.5);
 UnitTypes.antumbra.itemCapacity = 60;
 UnitTypes.antumbra.weapons.get(0).bullet.damage = 20;
@@ -463,7 +463,7 @@ UnitTypes.risso.weapons.get(0).bullet.speed = 5;
 UnitTypes.risso.weapons.get(0).bullet.lifetime = (22.5 * 8) / 5;
 UnitTypes.risso.weapons.get(1).shoot.shots = 5;
 UnitTypes.risso.weapons.get(1).shoot.shotDelay = 5;
-UnitTypes.risso.weapons.get(1).reload = (60 * 2.5)//fires salvo of missles every 2.5seconds
+UnitTypes.risso.weapons.get(1).reload = (60 * 5)//fires salvo of missles every 2.5seconds
 UnitTypes.risso.weapons.get(1).bullet.damage = 33;
 UnitTypes.risso.weapons.get(1).bullet.splashDamage = 9;
 UnitTypes.risso.weapons.get(1).bullet.splashDamageRadius = 20;
@@ -499,6 +499,48 @@ UnitTypes.minke.weapons.get(1).bullet.lifetime = (32.5 * 8) / 3;
 
 //neval support will be a defensive type of neval units, most of them having close range
 
+//bryde
+
+UnitTypes.bryde.health = 710;
+UnitTypes.bryde.armor = 8;
+UnitTypes.bryde.speed = (4.2 / 7.5);
+UnitTypes.bryde.range = (34.5 * 8);//so its 2 less then ripple. the 2 extra tiles of range on ripple get canceled out beacouse you need to have walls
+UnitTypes.bryde.abilities.remove(0);//to balance out the damage
+UnitTypes.bryde.weapons.get(0).inaccuracy = 0;
+UnitTypes.bryde.weapons.get(0).reload = (60 * 1.5);//1 every 1.5 seconds
+UnitTypes.bryde.weapons.get(0).bullet.splashDamage = 225;
+UnitTypes.bryde.weapons.get(0).bullet.splashDamageRadius = 24;
+UnitTypes.bryde.weapons.get(0).bullet.knockback = 0;
+UnitTypes.bryde.weapons.get(0).bullet.speed = 2.85;
+UnitTypes.bryde.weapons.get(0).bullet.lifetime = (34.5 * 8) / 2.85;
+UnitTypes.bryde.weapons.get(0).bullet.keepVelocity = false;
+UnitTypes.bryde.weapons.get(1).shoot.shots = 3;
+UnitTypes.bryde.weapons.get(1).shoot.shotDelay = 3;
+UnitTypes.bryde.weapons.get(1).reload = (60 * 3);
+UnitTypes.bryde.weapons.get(1).bullet.damage = 45;
+UnitTypes.bryde.weapons.get(1).bullet.splashDamage = 11;
+UnitTypes.bryde.weapons.get(1).bullet.speed = 5.8;
+UnitTypes.bryde.weapons.get(1).bullet.lifetime = (25 * 8) / 5.8;
+
+//sei
+
+UnitTypes.sei.health = 3750;
+UnitTypes.sei.armor = 12;
+UnitTypes.sei.speed = (6.25 / 7.5);
+UnitTypes.sei.range = (28 * 8);
+UnitTypes.sei.weapons.get(0).bullet.collidesGround = false;
+UnitTypes.sei.weapons.get(0).inaccuracy = 11;
+UnitTypes.sei.weapons.get(0).bullet.damage = 44;
+UnitTypes.sei.weapons.get(0).bullet.splashDamage = 56;
+UnitTypes.sei.weapons.get(0).bullet.speed = 6;
+UnitTypes.sei.weapons.get(0).bullet.lifetime = (25.75 * 8) / 5.7;
+UnitTypes.sei.weapons.get(0).bullet.splashDamageRadius = 16;
+UnitTypes.sei.weapons.get(1).reload = (60 * 1.5);
+UnitTypes.sei.weapons.get(1).bullet.damage = 115;
+UnitTypes.sei.weapons.get(1).bullet.splashDamage = 45;
+UnitTypes.sei.weapons.get(1).bullet.splashDamageRadius = 12;
+UnitTypes.sei.weapons.get(1).bullet.lifetime = (28 * 8) / 7;
+
 //retusa
 
 UnitTypes.retusa.health = 320;
@@ -513,7 +555,7 @@ UnitTypes.retusa.weapons.get(1).bullet.healPercent = 3;
 UnitTypes.retusa.weapons.get(1).bullet.weaveMag = 3;
 UnitTypes.retusa.weapons.get(1).bullet.weaveScale = 1;
 UnitTypes.retusa.weapons.get(1).bullet.speed = 3.5;
-UnitTypes.retusa.weapons.get(1).bullet.lifetime = (10 * 8) / 3.5;
+UnitTypes.retusa.weapons.get(1).bullet.lifetime = (16 * 8) / 3.5;
 
 //oxynoe
 
