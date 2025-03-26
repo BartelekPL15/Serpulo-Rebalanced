@@ -429,14 +429,13 @@ UnitTypes.poly.abilities.get(0).amount = 24;
 
 //mega
 
-UnitTypes.mega.health = 600;
+UnitTypes.mega.health = 510;
 UnitTypes.mega.armor = 10;
-UnitTypes.poly.speed = (22.5 / 7.5);
-UnitTypes.poly.itemCapacity = 60;
-UnitTypes.poly.weapons.get(0).bullet.collidesAir = false;
-UnitTypes.poly.weapons.get(0).bullet.healPercent = 7.5;
-UnitTypes.poly.weapons.get(0).bullet.damage = 9;
-UnitTypes.poly.abilities.get(0).amount = 24;
+UnitTypes.mega.speed = (20 / 7.5);
+UnitTypes.mega.abilities.add(new ForceFieldAbility(24, 8 / 60, 80, 180));//it took me about 30 minutes to make megas force field. i hate java
+UnitTypes.mega.weapons.get(0).bullet.damage = 8;
+UnitTypes.mega.weapons.get(1).bullet.damage = 5;
+UnitTypes.mega.weapons.get(1).bullet.healPercent = 9;
 
 //quad
 
