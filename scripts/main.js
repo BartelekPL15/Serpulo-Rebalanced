@@ -160,7 +160,12 @@ UnitTypes.quasar.abilities.get(0).regen = (36 / 60);
 //vela changes
 //honestly its good as it is
 
-UnitTypes.vela.health = 3000;
+UnitTypes.vela.health = 2250;
+UnitTypes.vela.armor = 11;
+UnitTypes.vela.weapons.get(0).bullet.damage = (540 / 12);
+UnitTypes.vela.weapons.get(0).bullet.lifetime = 280;
+UnitTypes.vela.weapons.get(0).bullet.collidesAir = false;
+UnitTypes.vela.weapons.get(0).bullet.healPercent = 2.5;
 
 //corvus changes
 //longest range, destroys most things in its path but countered by air. not like it has 10000 health in yasr
