@@ -431,6 +431,12 @@ UnitTypes.poly.abilities.get(0).amount = 24;
 
 UnitTypes.mega.health = 600;
 UnitTypes.mega.armor = 10;
+UnitTypes.poly.speed = (22.5 / 7.5);
+UnitTypes.poly.itemCapacity = 60;
+UnitTypes.poly.weapons.get(0).bullet.collidesAir = false;
+UnitTypes.poly.weapons.get(0).bullet.healPercent = 7.5;
+UnitTypes.poly.weapons.get(0).bullet.damage = 9;
+UnitTypes.poly.abilities.get(0).amount = 24;
 
 //quad
 
@@ -463,7 +469,7 @@ UnitTypes.risso.weapons.get(0).bullet.speed = 5;
 UnitTypes.risso.weapons.get(0).bullet.lifetime = (22.5 * 8) / 5;
 UnitTypes.risso.weapons.get(1).shoot.shots = 5;
 UnitTypes.risso.weapons.get(1).shoot.shotDelay = 5;
-UnitTypes.risso.weapons.get(1).reload = (60 * 5)//fires salvo of missles every 2.5seconds
+UnitTypes.risso.weapons.get(1).reload = (60 * 5)//fires salvo of missles every 5 seconds
 UnitTypes.risso.weapons.get(1).bullet.damage = 33;
 UnitTypes.risso.weapons.get(1).bullet.splashDamage = 9;
 UnitTypes.risso.weapons.get(1).bullet.splashDamageRadius = 20;
@@ -534,10 +540,10 @@ UnitTypes.sei.weapons.get(0).bullet.damage = 44;
 UnitTypes.sei.weapons.get(0).bullet.splashDamage = 56;
 UnitTypes.sei.weapons.get(0).bullet.speed = 6;
 UnitTypes.sei.weapons.get(0).bullet.lifetime = (25.75 * 8) / 5.7;
-UnitTypes.sei.weapons.get(0).bullet.splashDamageRadius = 16;
-UnitTypes.sei.weapons.get(1).reload = (60 * 1.5);
-UnitTypes.sei.weapons.get(1).bullet.damage = 115;
-UnitTypes.sei.weapons.get(1).bullet.splashDamage = 45;
+UnitTypes.sei.weapons.get(0).bullet.splashDamageRadius = 24;
+UnitTypes.sei.weapons.get(1).reload = 40;
+UnitTypes.sei.weapons.get(1).bullet.damage = 125;
+UnitTypes.sei.weapons.get(1).bullet.splashDamage = 55;
 UnitTypes.sei.weapons.get(1).bullet.splashDamageRadius = 12;
 UnitTypes.sei.weapons.get(1).bullet.lifetime = (28 * 8) / 7;
 
