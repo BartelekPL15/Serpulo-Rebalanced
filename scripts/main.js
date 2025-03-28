@@ -530,7 +530,7 @@ UnitTypes.bryde.weapons.get(1).reload = (60 * 3);
 UnitTypes.bryde.weapons.get(1).bullet.damage = 45;
 UnitTypes.bryde.weapons.get(1).bullet.splashDamage = 11;
 UnitTypes.bryde.weapons.get(1).bullet.speed = 5.8;
-UnitTypes.bryde.weapons.get(1).bullet.lifetime = (25 * 8) / 5.8;
+UnitTypes.bryde.weapons.get(1).bullet.lifetime = (27.75 * 8) / 5.8;
 
 //sei
 
@@ -553,7 +553,23 @@ UnitTypes.sei.weapons.get(1).bullet.lifetime = (28 * 8) / 7;
 
 //retusa
 
-UnitTypes.retusa.health = 320;
+let retusaBolt = new Weapon("mount-weapon");
+retusaBolt.bullet = new BasicBulletType(5.2, 9);
+retusaBolt.shootSound = Sounds.pew;
+retusaBolt.mirror = false;
+retusaBolt.rotate = true;
+retusaBolt.top = false;
+retusaBolt.x = 5;
+retusaBolt.y = -6;
+retusaBolt.shootY = 2;
+retusaBolt.reload = 10;
+retusaBolt.inaccuracy = 2;
+retusaBolt.bullet.width = 9;
+retusaBolt.bullet.height = 10;
+retusaBolt.bullet.lifetime = (25 * 8) / 5.2;
+retusaBolt.bullet.collidesAir = false;
+
+UnitTypes.retusa.health = 480;
 UnitTypes.retusa.speed = (7.5 / 7.5);
 UnitTypes.retusa.weapons.get(1).shoot.shots = 7;
 UnitTypes.retusa.weapons.get(1).shoot.shotDelay = 3;
@@ -565,17 +581,24 @@ UnitTypes.retusa.weapons.get(1).bullet.healPercent = 3;
 UnitTypes.retusa.weapons.get(1).bullet.weaveMag = 3;
 UnitTypes.retusa.weapons.get(1).bullet.weaveScale = 1;
 UnitTypes.retusa.weapons.get(1).bullet.speed = 3.5;
-UnitTypes.retusa.weapons.get(1).bullet.lifetime = (16 * 8) / 3.5;
+UnitTypes.retusa.weapons.get(1).bullet.lifetime = (21 * 8) / 5;
+UnitTypes.retusa.weapons.add(retusaBolt);
 
 //oxynoe
 
-UnitTypes.oxynoe.health = 670;
-UnitTypes.oxynoe.armor = 10;
+UnitTypes.oxynoe.health = 750;
+UnitTypes.oxynoe.armor = 5;
 UnitTypes.oxynoe.speed = (9 / 7.5);
 UnitTypes.oxynoe.weapons.get(0).bullet.damage = 37;
 UnitTypes.oxynoe.weapons.get(1).reload = 6;
 UnitTypes.oxynoe.weapons.get(1).targetInterval = 2;
 UnitTypes.oxynoe.weapons.get(1).targetSwitchInterval = 5;
+
+//cyerce
+
+UnitTypes.cyerce.health = 1280;
+UnitTypes.cyerce.armor = 8;
+UnitTypes.cyerce.speed = (5.75 / 7.5);
 
 //BLOCKS
 
