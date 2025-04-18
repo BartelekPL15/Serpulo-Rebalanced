@@ -464,13 +464,13 @@ UnitTypes.oct.abilities.get(0).regen = (500 / 60);
 
 //risso
 //(22.03.2025)current idea to rebalance risso: make it fast hit and run unit - better at attacking targets
-UnitTypes.risso.health = 180;//less health to balance out faster speed
-UnitTypes.risso.armor = 5;//so it does't die too fast from splash damage
+UnitTypes.risso.health = 140;//less health to balance out faster speed
+UnitTypes.risso.armor = 4;//so it does't die too fast from splash damage
 UnitTypes.risso.speed = (11.5 / 7.5);
 UnitTypes.risso.rotateSpeed = 8;//more rotate speed so it can dodge better
 UnitTypes.risso.weapons.get(0).bullet.damage = 13;
 UnitTypes.risso.weapons.get(0).bullet.speed = 5;
-UnitTypes.risso.weapons.get(0).bullet.lifetime = (22.5 * 8) / 5;
+UnitTypes.risso.weapons.get(0).bullet.lifetime = (17.5 * 8) / 5;
 UnitTypes.risso.weapons.get(1).shoot.shots = 5;
 UnitTypes.risso.weapons.get(1).shoot.shotDelay = 5;
 UnitTypes.risso.weapons.get(1).reload = (60 * 5)//fires salvo of missles every 5 seconds
@@ -478,7 +478,7 @@ UnitTypes.risso.weapons.get(1).bullet.damage = 33;
 UnitTypes.risso.weapons.get(1).bullet.splashDamage = 9;
 UnitTypes.risso.weapons.get(1).bullet.splashDamageRadius = 20;
 UnitTypes.risso.weapons.get(1).bullet.speed = 5.8;
-UnitTypes.risso.weapons.get(1).bullet.lifetime = (23 * 8) / 5.8;
+UnitTypes.risso.weapons.get(1).bullet.lifetime = (15 * 8) / 5.8;
 UnitTypes.risso.weapons.get(1).bullet.collidesAir = false;
 
 //minke
@@ -595,10 +595,22 @@ UnitTypes.oxynoe.weapons.get(1).targetInterval = 2;
 UnitTypes.oxynoe.weapons.get(1).targetSwitchInterval = 5;
 
 //cyerce
+//(17.04.2025)current idea to rebalance cyerce: in general this unit tree is what i think better at defending
+//to make cyerce better defence unit i want to incrise its health at cost of its speed and range.
+//this should make it worse at attacking since turrets have more time to attack it untill cyerce can it turrets
 
 UnitTypes.cyerce.health = 1280;
 UnitTypes.cyerce.armor = 8;
 UnitTypes.cyerce.speed = (5.75 / 7.5);
+UnitTypes.cyerce.weapons.get(1).bullet.lifetime = (17.5 * 8) / 2.5;
+
+//(17.04.2025)current idea to rebalance aegires: its defensive unit that doesn't really can defend itself... yeah its gonna be a lots of work to do
+//its mostly debufs enemy unit and pretects friendly from bullets, that is untill someone uses scorch, arc, lancer, fuse, foreshadow, any of the crawler and nova tree units
+//in summary - aegires is weak, it cannot protect itself or its team from many threats, its only upside is health, it could be anti air but its doesn't do enough damage to be good
+
+UnitTypes.aegires.health = 5000;
+UnitTypes.aegires.abilities.get(0).reload = (0.5 * 60);
+UnitTypes.aegires.abilities.get(0).range = (20 * 8);
 
 //BLOCKS
 
