@@ -176,8 +176,8 @@ UnitTypes.corvus.targetAir = false;
 UnitTypes.corvus.weapons.get(0).bullet.collidesAir = false;
 UnitTypes.corvus.weapons.get(0).bullet.damage = 2000;
 UnitTypes.corvus.weapons.get(0).bullet.length = (67.5 * 8);
-
 UnitTypes.corvus.range = (65 * 8);//no, its not gonna be 69 range, you want make me say 6... oh, damn it.
+
 //crawler tree is not good against buildins but very effective wining unit fights (ground of course)
 //crawler changes
 
@@ -321,10 +321,6 @@ UnitTypes.horizon.weapons.get(0).shoot.shots = 8;
 UnitTypes.horizon.weapons.get(0).shoot.shotDelay = 2;
 UnitTypes.horizon.weapons.get(0).reload = (60 * 5);
 UnitTypes.horizon.weapons.get(0).velocityRnd = 3.5;
-
-/*
-units from here are not done (this includes all naval, mono tree, zenith, antumbra and eclipse)
-*/
 
 //zenith has now 2 extra weapons to help it defend from single units
 
