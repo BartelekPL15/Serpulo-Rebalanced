@@ -97,6 +97,8 @@ UnitTypes.reign.weapons.get(0).bullet.collidesAir = false;
 UnitTypes.reign.weapons.get(0).bullet.splashDamageRadius = 16;
 UnitTypes.reign.weapons.get(0).bullet.lifetime = (18 * 8) / 13;
 UnitTypes.reign.weapons.get(0).bullet.damage = 145;
+UnitTypes.reign.weapons.get(0).bullet.fragBullet.collidesAir = false;
+UnitTypes.reign.weapons.get(0).bullet.fragBullet.pierceCap = 2;
 UnitTypes.reign.range = (18 * 8);
 
 //nova tree is for support, defending and other strategys you can't do with dagger tree
@@ -554,6 +556,7 @@ UnitTypes.sei.weapons.get(1).bullet.lifetime = (28 * 8) / 7;
 
 UnitTypes.omura.health = 9500;
 UnitTypes.omura.armor = 8;
+UnitTypes.omura.speed = (3 / 7.5);
 UnitTypes.omura.weapons.get(0).bullet.damage = 4500;
 UnitTypes.omura.weapons.get(0).reload = (60 * 3);
 UnitTypes.omura.weapons.get(0).bullet.pierceDamageFactor = 0.8;
