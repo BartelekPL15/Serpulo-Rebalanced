@@ -527,6 +527,7 @@ UnitTypes.bryde.weapons.get(1).bullet.damage = 45;
 UnitTypes.bryde.weapons.get(1).bullet.splashDamage = 11;
 UnitTypes.bryde.weapons.get(1).bullet.speed = 5.8;
 UnitTypes.bryde.weapons.get(1).bullet.lifetime = (27.75 * 8) / 5.8;
+UnitTypes.bryde.weapons.get(1).bullet.collidesAir = false;
 
 //sei
 
@@ -546,6 +547,17 @@ UnitTypes.sei.weapons.get(1).bullet.damage = 125;
 UnitTypes.sei.weapons.get(1).bullet.splashDamage = 55;
 UnitTypes.sei.weapons.get(1).bullet.splashDamageRadius = 12;
 UnitTypes.sei.weapons.get(1).bullet.lifetime = (28 * 8) / 7;
+
+//omura
+
+//honestly i have no other idea then buffing its damage for health nerf
+
+UnitTypes.omura.health = 9500;
+UnitTypes.omura.armor = 8;
+UnitTypes.omura.weapons.get(0).bullet.damage = 4500;
+UnitTypes.omura.weapons.get(0).reload = (60 * 3);
+UnitTypes.omura.weapons.get(0).bullet.pierceDamageFactor = 0.8;
+UnitTypes.omura.weapons.get(0).bullet.collidesAir = false;
 
 //retusa
 
