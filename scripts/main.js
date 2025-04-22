@@ -930,19 +930,19 @@ Blocks.foreshadow.ammoPerShot = 8;
 
 //and this code from yasr to make t4s cheaper
 Blocks.exponentialReconstructor.constructTime = 60 * 60 * (1);
-Blocks.exponentialReconstructor.requirements = ItemStack.with(Items.lead, 1200, Items.titanium, 1000, Items.thorium, 650, Items.silicon, 700,  Items.plastanium, 250);
+Blocks.exponentialReconstructor.requirements = ItemStack.with(Items.lead, 1200, Items.titanium, 1000, Items.thorium, 650, Items.silicon, 700,  Items.plastanium, 125);
 
 Blocks.tetrativeReconstructor.constructTime = 60 * 60 * (4 * 2);
 
 function postLoadContent(){
 	//Work around since no easier way to do this that i know off -Rushie
 	let expoCons = Blocks.exponentialReconstructor.findConsumer(c => c instanceof  ConsumeItems);
-	expoCons.items[0] = new ItemStack(Items.silicon, (850*2/3));
-	expoCons.items[1] = new ItemStack(Items.titanium, (750*2/3));
-	expoCons.items[2] = new ItemStack(Items.plastanium, (650*2/3));
-	Blocks.exponentialReconstructor.capacities[10] = (650*4/3);
-	Blocks.exponentialReconstructor.capacities[9] = (850*4/3);
-	Blocks.exponentialReconstructor.capacities[6] = (750*4/3);
+	expoCons.items[0] = new ItemStack(Items.silicon, (540));
+	expoCons.items[1] = new ItemStack(Items.titanium, (480));
+	expoCons.items[2] = new ItemStack(Items.plastanium, (200));
+	Blocks.exponentialReconstructor.capacities[10] = (200 * 2);
+	Blocks.exponentialReconstructor.capacities[9] = (540 * 2);
+	Blocks.exponentialReconstructor.capacities[6] = (480 * 2);
 	
 	let tetrCons = Blocks.tetrativeReconstructor.findConsumer(c => c instanceof  ConsumeItems);
 	tetrCons.items[0] = new ItemStack(Items.silicon, (1000 * 2));
