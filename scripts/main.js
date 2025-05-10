@@ -38,6 +38,11 @@ UnitTypes.fortress.weapons.get(0).bullet.splashDamage = 70;
 //scepter changes
 //another long range unit, deals damage in bursts and has small turrets to defend itself
 //not much to do here, just nerf health cuz t4s are gonna be cheaper
+let scepterBul = new BasicBulletType(5, 12);
+scepterBul.width = 7;
+scepterBul.height = 9;
+scepterBul.lifetime = (20 * 8) / 5;
+scepterBul.collidesAir = false;
 
 UnitTypes.scepter.health = 2000;
 UnitTypes.scepter.speed = (3.22 / 7.5);
@@ -46,15 +51,11 @@ UnitTypes.scepter.weapons.get(0).bullet.collidesAir = false;
 UnitTypes.scepter.weapons.get(0).shoot.shots = 3;
 UnitTypes.scepter.weapons.get(0).reload = (60 * 3);//fires salvo every 3 seconds
 UnitTypes.scepter.weapons.get(0).bullet.damage = 125;
-UnitTypes.scepter.weapons.get(0).bullet.lightningDamage = 5;
-UnitTypes.scepter.weapons.get(0).bullet.lifetime = (38 * 8) / 8;
+UnitTypes.scepter.weapons.get(0).bullet.lightningDamage = 25;
+UnitTypes.scepter.weapons.get(0).bullet.lifetime = (44 * 8) / 8;
 UnitTypes.scepter.weapons.get(0).shootCone = 8; //incrased the shoot cone to reduce ai dumbness
-UnitTypes.scepter.weapons.get(1).bullet.collidesGround = false;
-UnitTypes.scepter.weapons.get(1).shootSound = Sounds.shootSnap;
-UnitTypes.scepter.weapons.get(1).bullet.damage = 25;
-UnitTypes.scepter.weapons.get(1).bullet.speed = 5;
-UnitTypes.scepter.weapons.get(1).bullet.lifetime = (25 * 8) / 5;
-UnitTypes.scepter.weapons.get(1).bullet.homingPower = 0.1; //a bit higher so it can hit horizons better with the weave
+UnitTypes.scepter.weapons.get(1).reload = 12;
+UnitTypes.scepter.weapons.get(1).bullet = scepterBul;
 UnitTypes.scepter.weapons.get(2).bullet.collidesGround = false;
 UnitTypes.scepter.weapons.get(2).shootSound = Sounds.shootSnap;
 UnitTypes.scepter.weapons.get(2).bullet.damage = 25;
@@ -832,6 +833,12 @@ Blocks.swarmer.range = 400;
 Blocks.swarmer.limitRange();
 Blocks.swarmer.requirements = ItemStack.with(Items.graphite, 210, Items.titanium, 210, Items.silicon, 180, Items.plastanium, 270);
 
+//segment
+
+Blocks.segment.scaledHealth = 300;
+Blocks.segment.range = (30 * 8);
+Blocks.segment.requirements = ItemStack.with(Items.titanium, 50, Items.thorium, 80, Items.silicon, 80, Items.plastanium, 40);
+
 //cyclone
 
 //im tired of making informative comments. time to make some jokes
@@ -942,6 +949,7 @@ Blocks.foreshadow.ammoTypes.get(Items.surgeAlloy).status = StatusEffects.slow;
 Blocks.foreshadow.ammoTypes.get(Items.surgeAlloy).statusDuration = 300;
 Blocks.foreshadow.ammoTypes.get(Items.surgeAlloy).damage = 1750;
 Blocks.foreshadow.ammoPerShot = 8;
+Blocks.foreshadow.requirements = ItemStack.with(Items.copper, 2000, Items.lead, 250, Items.metaglass, 750, Items.silicon, 800, Items.plastanium, 600, Items.surgeAlloy, 500, Items.phaseFabric, 200);
 
 //and this code from yasr to make t4s cheaper
 Blocks.exponentialReconstructor.constructTime = 60 * 60 * (1);
