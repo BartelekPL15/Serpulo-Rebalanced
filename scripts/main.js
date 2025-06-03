@@ -445,11 +445,14 @@ UnitTypes.mega.weapons.get(1).bullet.healPercent = 9;
 
 UnitTypes.quad.health = 850;
 UnitTypes.quad.armor = 10;
-UnitTypes.quad.weapons.get(0).bullet.splashDamage = 1250;
+UnitTypes.quad.weapons.get(0).shoot.shots = 3;
+UnitTypes.quad.weapons.get(0).shoot.shotDelay = (0.7 * 60);
+UnitTypes.quad.weapons.get(0).bullet.splashDamage = 650;
 UnitTypes.quad.weapons.get(0).bullet.splashDamageRadius = 64;
 UnitTypes.quad.weapons.get(0).reload = 300;
+UnitTypes.quad.weapons.get(0).bullet.healPercent = 20;
 UnitTypes.quad.itemCapacity = 0;//to avoid loading up quad with blast compound or something else
-UnitTypes.quad.speed = (20 / 7.5);
+UnitTypes.quad.speed = (15 / 7.5);
 
 //oct
 
@@ -619,10 +622,19 @@ UnitTypes.cyerce.weapons.get(1).bullet.lifetime = (17.5 * 8) / 2.5;
 //(17.04.2025)current idea to rebalance aegires: its defensive unit that doesn't really can defend itself... yeah its gonna be a lots of work to do
 //its mostly debufs enemy unit and pretects friendly from bullets, that is untill someone uses scorch, arc, lancer, fuse, foreshadow, any of the crawler and nova tree units
 //in summary - aegires is weak, it cannot protect itself or its team from many threats, its only upside is health, it could be anti air but its doesn't do enough damage to be good
+let aegiresHeal = new RegenAbility();
+aegiresHeal.amount = (22 / 60);
 
 UnitTypes.aegires.health = 5000;
 UnitTypes.aegires.abilities.get(0).reload = (0.5 * 60);
 UnitTypes.aegires.abilities.get(0).range = (20 * 8);
+UnitTypes.aegires.abilities.get(0).healPercent = 3;
+UnitTypes.aegires.abilities.add(aegiresHeal);
+
+//navanax
+//huge health increse - it takes all damage
+
+UnitTypes.navanax.health = 80000;
 
 //BLOCKS
 
@@ -668,6 +680,7 @@ Blocks.duo.ammoTypes.get(Items.silicon).damage = 10;
 Blocks.duo.ammoTypes.get(Items.silicon).reloadMultiplier = 3;
 Blocks.duo.ammoTypes.get(Items.silicon).ammoMultiplier = 8;
 Blocks.duo.ammoTypes.get(Items.silicon).rangeChange = 40;
+Blocks.duo.ammoTypes.get(Items.silicon).speed = 5;
 Blocks.duo.limitRange();
 
 //scatter
@@ -720,10 +733,12 @@ Blocks.hail.ammoTypes.get(Items.silicon).splashDamage = 40;
 Blocks.hail.ammoTypes.get(Items.silicon).reloadMultiplier = 3;
 Blocks.hail.ammoTypes.get(Items.silicon).ammoMultiplier = 4;
 Blocks.hail.ammoTypes.get(Items.silicon).rangeChange = 41;
+Blocks.hail.ammoTypes.get(Items.silicon).speed = 4;
 Blocks.hail.ammoTypes.get(Items.pyratite).splashDamage = 60;
 Blocks.hail.ammoTypes.get(Items.pyratite).reloadMultiplier = 1.2;
 Blocks.hail.ammoTypes.get(Items.pyratite).ammoMultiplier = 5;
 Blocks.hail.ammoTypes.get(Items.pyratite).splashDamageRadius = 40;
+Blocks.hail.limitRange();
 
 //salvo
 
@@ -752,6 +767,7 @@ Blocks.salvo.ammoTypes.get(Items.graphite).knockback = 2.5;
 Blocks.salvo.ammoTypes.get(Items.silicon).ammoMultiplier = 4;
 Blocks.salvo.ammoTypes.get(Items.silicon).damage = 14;
 Blocks.salvo.ammoTypes.get(Items.silicon).reloadMultiplier = 2;
+Blocks.salvo.ammoTypes.get(Items.silicon).speed = 4.5;
 Blocks.salvo.ammoTypes.get(Items.thorium).ammoMultiplier = 2;
 Blocks.salvo.ammoTypes.get(Items.thorium).damage = 40;
 Blocks.salvo.ammoTypes.get(Items.pyratite).ammoMultiplier = 4;
@@ -781,6 +797,7 @@ Blocks.ripple.ammoTypes.get(Items.silicon).splashDamage = 30;
 Blocks.ripple.ammoTypes.get(Items.silicon).reloadMultiplier = 2.5;
 Blocks.ripple.ammoTypes.get(Items.silicon).splashDamageRadius = 14;
 Blocks.ripple.ammoTypes.get(Items.silicon).ammoMultiplier = 3;
+Blocks.ripple.ammoTypes.get(Items.silicon).speed = 5;
 Blocks.ripple.ammoTypes.get(Items.plastanium).splashDamage = 50;
 Blocks.ripple.ammoTypes.get(Items.plastanium).splashDamageRadius = 24;
 Blocks.ripple.ammoTypes.get(Items.plastanium).fragBullet.width = 5;
@@ -802,6 +819,7 @@ Blocks.ripple.ammoPerShot = 6;
 Blocks.ripple.minRange = 100;
 Blocks.ripple.velocityRnd = -0.2;
 Blocks.ripple.inaccuracy = 10;
+Blocks.ripple.limitRange();
 Blocks.ripple.requirements = ItemStack.with(Items.copper, 900, Items.graphite, 850, Items.titanium, 750);
 
 //swarmer
@@ -819,7 +837,7 @@ Blocks.swarmer.ammoTypes.get(Items.pyratite).damage = 80;
 Blocks.swarmer.ammoTypes.get(Items.pyratite).splashDamage = 20;
 Blocks.swarmer.ammoTypes.get(Items.pyratite).splashDamageRadius = 20;
 Blocks.swarmer.ammoTypes.get(Items.pyratite).speed = 7.4;
-Blocks.swarmer.ammoTypes.get(Items.blastCompound).damage = 50;
+Blocks.swarmer.ammoTypes.get(Items.blastCompound).damage = 30;
 Blocks.swarmer.ammoTypes.get(Items.blastCompound).splashDamage = 80;
 Blocks.swarmer.ammoTypes.get(Items.blastCompound).splashDamageRadius = 32;
 Blocks.swarmer.ammoTypes.get(Items.blastCompound).speed = 7.4;
